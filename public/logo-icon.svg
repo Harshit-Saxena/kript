@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- Bottom (largest) chevron — most transparent -->
+  <path d="M2 38 L24 10 L46 38 L40 38 L24 18 L8 38 Z" fill="#22c55e" opacity="0.35"/>
+  <!-- Middle chevron -->
+  <path d="M7 32 L24 8 L41 32 L35 32 L24 14 L13 32 Z" fill="#22c55e" opacity="0.65"/>
+  <!-- Top chevron — fully opaque, brightest -->
+  <path d="M12 26 L24 6 L36 26 L30 26 L24 12 L18 26 Z" fill="#22c55e"/>
+</svg>

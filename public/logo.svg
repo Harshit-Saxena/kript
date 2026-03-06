@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- K Letter - left vertical stroke -->
+  <path d="M120 40 L120 170 L140 170 L140 40 Z" fill="url(#grad1)" filter="url(#glow)"/>
+
+  <!-- K Letter - upper diagonal arm -->
+  <path d="M140 100 L190 40 L210 40 L155 108 Z" fill="url(#grad1)" filter="url(#glow)"/>
+
+  <!-- K Letter - lower diagonal leg -->
+  <path d="M140 115 L195 170 L215 170 L152 108 Z" fill="url(#grad2)" filter="url(#glow)"/>
+
+  <!-- X Letter - top-left to bottom-right stroke -->
+  <path d="M195 40 L210 40 L280 170 L265 170 Z" fill="url(#grad2)" filter="url(#glow)"/>
+
+  <!-- X Letter - top-right to bottom-left stroke -->
+  <path d="M265 40 L280 40 L210 170 L195 170 Z" fill="url(#grad1)" filter="url(#glow)"/>
+
+  <!-- Arrow tip on X top-right -->
+  <path d="M270 40 L290 40 L290 60 L282 52 L270 52 Z" fill="url(#grad2)" filter="url(#glow)"/>
+  <line x1="290" y1="40" x2="290" y2="58" stroke="#2dd4bf" stroke-width="2"/>
+  <line x1="272" y1="40" x2="290" y2="40" stroke="#2dd4bf" stroke-width="2"/>
+
+  <!-- Circuit dots on K -->
+  <circle cx="130" cy="75" r="5" fill="url(#grad1)" filter="url(#glow)"/>
+  <circle cx="130" cy="135" r="4" fill="url(#grad2)" filter="url(#glow)"/>
+
+  <!-- Circuit line from K mid -->
+  <line x1="120" y1="105" x2="108" y2="105" stroke="url(#grad1)" stroke-width="2.5"/>
+  <circle cx="105" cy="105" r="4" fill="url(#grad1)" filter="url(#glow)"/>
+  <line x1="105" y1="105" x2="105" y2="125" stroke="url(#grad1)" stroke-width="2"/>
+  <circle cx="105" cy="128" r="3" fill="url(#grad2)" filter="url(#glow)"/>
+
+  <!-- Circuit dot on X intersection -->
+  <circle cx="237" cy="105" r="5" fill="url(#grad2)" filter="url(#glow)"/>
+
+  <!-- KRIPT X Text -->
+  <text x="200" y="215" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800" letter-spacing="8" fill="url(#textGrad)">KRIPT X</text>
+
+  <!-- CRYPTO EXCHANGE subtitle -->
+  <text x="200" y="245" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" letter-spacing="6" fill="url(#textGrad)" opacity="0.7">CRYPTO EXCHANGE</text>
+
+  <!-- Decorative dots for subtitle -->
+  <circle cx="118" cy="241" r="2" fill="#14b8a6" opacity="0.7"/>
+  <circle cx="282" cy="241" r="2" fill="#14b8a6" opacity="0.7"/>
+</svg>

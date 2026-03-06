@@ -1,26 +1,33 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-navy-950: #0a1628;
+  --color-navy-900: #0f1d32;
+  --color-navy-800: #162a46;
+  --color-navy-700: #1e3a5f;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-green-500: #22c55e;
+  --color-green-400: #4ade80;
+  --color-red-500: #ef4444;
+  --color-red-400: #f87171;
+  --color-navy-850: #111e30;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes float-price {
+  0%   { opacity: 0; transform: translateY(0px)  scale(0.55); }
+  14%  { opacity: 1; transform: translateY(-10px) scale(1.05); }
+  20%  { opacity: 1; transform: translateY(-14px) scale(1);    }
+  78%  { opacity: 1; transform: translateY(-30px) scale(1);    }
+  100% { opacity: 0; transform: translateY(-46px) scale(0.88); }
 }
