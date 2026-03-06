@@ -17,6 +17,11 @@ export const metadata: Metadata = {
   title: "Krypex - Track All Your Wallets & Exchanges",
   description:
     "Krypex is the ultimate crypto portfolio tracker. Connect 300+ wallets and exchanges including Binance, MetaMask, OKX, and more. Track 20,000+ coins across 100+ blockchains.",
+  icons: {
+    icon: "/logo-icon.svg",
+    shortcut: "/logo-icon.svg",
+    apple: "/logo-icon.svg",
+  },
 };
 
 export default function RootLayout({
